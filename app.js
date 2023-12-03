@@ -4,3 +4,6 @@ function bold()   {
  function underline()   {
     document.execCommand('underline', true , null) 
  }
+ function italic()   {
+    document.execCommand('italic', true , null) 
+ } 
