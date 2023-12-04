@@ -20,3 +20,7 @@ $('.left').on('click',function(){
  $('.center').on('click',function(){
     document.getElementById('editor').style.textAlign = 'center '
  }) 
+ $('.right').on('click',function(){
+    document.getElementById('editor').style.textAlign = 'right '   
+  }) 
+ 
