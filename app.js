@@ -14,3 +14,6 @@ function bold()   {
     var text = document.getElementById('editor').innerHTML
     document.getElementById('editor').innerHTML = text.replace(highlightedText, span)
 })
+$('.left').on('click',function(){
+    document.getElementById('editor').style.textAlign = 'left '
+ }) 
