@@ -9,26 +9,54 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Text Editor - [Your Student Number]</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor - CT/2019/083</title>
 </head>
-
+ 
 <body>
 
     <!--  Remove this div once you are started -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Start Your Work Here!</h1>
-                <hr>
-            </div>
-        </div>
+    <div class="toolbar bg-dark"> 
+        <button type="button" class="bold" onclick="bold()">
+            <img src="Resources/bold-xxl.png" width="28">
+         </button>
+         <button type="button" class="underline" onclick="underline()">
+            <img src="Resources/format_underline_white_192x192.png" width="40  ">
+         </button>
+         <button type="button" class="italic" onclick="italic()">
+            <img src="Resources/italic-xxl.png" width="28  ">
+         </button>
+         <button type="button" class="font-color">
+            <img src="Resources/icons8-text-color-100.png" width="40">
+         </button>
+         <button type="button" class="left" >
+            <img src="Resources/left.png" width="28  ">
+         </button>
+         <button type="button" class="center" >
+            <img src="Resources/center.png" width="28  ">
+         </button>
+         <button type="button" class="right" >
+            <img src="Resources/right.png" width="28  ">
+         </button>
+         <button type="button" class="justify" >
+            <img src="Resources/justify.png" width="28  ">
+         </button>
+         <button type="button" class="undo" onclick="undo()">
+            <img src="Resources/undo-4-32.png" width="28  ">
+         </button>
+         <button type="button" class="redo" onclick="redo()">
+            <img src="Resources/action-redo-32.png" width="28  ">
+         </button>
     </div>
+
+    <div id="editor" contenteditable="true"></div>
     
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
-<!-- Author: [Your Name] | [Your Student Number] -->
+<!-- Author: [P.H.N.D Hettiarachchi] | [CT/2019/083] -->
 </html>
